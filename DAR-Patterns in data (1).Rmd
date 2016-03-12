@@ -1,7 +1,7 @@
 ---
-title: "Title Here"
-author: "Your Name Here"
-date: "Put the Date Here!"
+title: "pushups study"
+author: "Peyton Manning"
+date: "12 Mar 2017"
 output: word_document
 ---
 
@@ -9,16 +9,18 @@ output: word_document
 require(knitr)
 require(mosaic)
 require(tigerstats)
+
 ```
 
 # Introduction
 
 Several years ago some MAT 111 students who were on the footbal team conducted a study of their team-mates.  The results are contained in the data frame `pushups` in the `tigerstats` package.
 
-```{r eval=FALSE}
+```{r }
 data(pushups)
 View(pushups)
 help(pushups)
+
 ```
 
 Among other things, the students recorded the type of position a player had on the team (either line or skill), and also the number of push-ups each player could perform in a two-minute period.
@@ -33,6 +35,15 @@ Our Research Question is:
 # Methods
 
 <Perform a variable analysis, and based on that nalysis choose at least one apprpriate graphical method and one appropriate numerical method to address the research question.>
+
+```{r}
+with(pushups,
+boxplot(pushups~position)
+)
+
+```
+
+
 
 # Results
 
